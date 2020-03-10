@@ -1,0 +1,171 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+#header {
+  -webkit-box-shadow: 0 0 5px black;
+          box-shadow: 0 0 5px black;
+}
+
+#header #nav-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 1140px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+#header #nav-container #logo-link #header-logo {
+  width: 150px;
+}
+
+#header #nav-container #header-nav {
+  -ms-flex-preferred-size: 35%;
+      flex-basis: 35%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+#header #nav-container #header-nav .nav-item {
+  text-transform: uppercase;
+  font-weight: bold;
+  -webkit-transition: color 0.15s ease-in;
+  transition: color 0.15s ease-in;
+}
+
+#header #nav-container #header-nav .nav-item:hover {
+  color: #57b22b;
+}
+
+/* HOME page */
+#outer-container-quote {
+  background-image: url(https://images.pexels.com/photos/1084510/pexels-photo-1084510.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-size: cover;
+  background-position: top center;
+  width: 100%;
+  height: 90vh;
+}
+
+#outer-container-quote #inner-container-quote {
+  max-width: 1140px;
+}
+
+#outer-container-quote #inner-container-quote .quote {
+  max-width: 840px;
+  padding: 20px;
+  margin: auto;
+  margin-left: 15vw;
+  font-family: "Cedarville Cursive", cursive;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(30%, darkgoldenrod), to(black));
+  background: linear-gradient(darkgoldenrod 30%, black);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+/* ART page */
+#container #gallery-section-container {
+  max-width: 1140px;
+  margin: 0 auto;
+  width: 100%;
+  margin: 60px auto;
+}
+
+#container #gallery-section-container .hero-title {
+  margin: 10px 0;
+}
+
+#container #gallery-section-container .gallery-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+#footer {
+  background-image: url(https://images.pexels.com/photos/354939/pexels-photo-354939.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260);
+  background-size: cover;
+  background-position: top;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-blend-mode: soft-light;
+  background-attachment: fixed;
+  padding: 20px;
+}
+
+#footer #footer-container {
+  max-width: 1140px;
+  margin: 0 auto;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#footer #footer-container #footer-nav-container {
+  display: -ms-grid;
+  display: grid;
+  grid-row-gap: 20px;
+}
+
+#footer #footer-container #footer-nav-container .footer-nav-item {
+  font-weight: bold;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  color: #cccccc;
+  -webkit-transition: color 0.15s ease-in;
+  transition: color 0.15s ease-in;
+}
+
+#footer #footer-container #footer-nav-container .footer-nav-item:hover {
+  color: white;
+}
+
+#footer #footer-container #footer-logo {
+  width: 300px;
+}
+
+#footer #copyright-text {
+  color: #e9ebed;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+  font-size: 1.4em;
+}
+
+/* styling with tags */
+a {
+  text-decoration: none;
+  color: black;
+}
+
+h1 {
+  font-size: 4em;
+}
+/*# sourceMappingURL=styles.css.map */
