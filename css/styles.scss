@@ -1,9 +1,11 @@
 @import "./helper/_variables.scss";
 @import "./helper/_mixins.scss";
+@import "./helper/responsive";
 //pages
 @import "./pages/home";
 @import "./pages/art";
 @import "./pages/blogs";
+@import "./pages/blogs-single";
 *,
 ::before,
 ::after {
@@ -15,6 +17,7 @@
 
 #header {
   box-shadow: 0 0 5px black;
+  position: relative;                 //to make sure shadows are above other sibling divs
   #nav-container {
     display: flex;
     justify-content: space-between;
@@ -40,6 +43,8 @@
     }
   }
 }
+
+  
 
 #footer {
   background-image: url(https://images.pexels.com/photos/354939/pexels-photo-354939.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260);
