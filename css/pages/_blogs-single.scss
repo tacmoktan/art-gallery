@@ -1,6 +1,33 @@
-#single-blogs-container{
-    @include main-container;
-    #content-container{
-        
+#single-blogs-container {
+  @include main-container;
+}
+
+.single-blog-container {
+  display: grid;
+  grid-row-gap: 40px;
+  .blog-text-container {
+    max-width: $blog-text-container-max-width;
+    margin: 0 auto;
+  }
+
+  .single-blog-title {
+    font-family: $blog-title-font-family;
+    font-size: $blog-title-size;
+    @include media-phone {
+      font-size: $blog-title-size-sm;
     }
+  }
+
+  .single-blog-details {
+    font-size: $blog-details-size;
+    display: grid;
+    grid-row-gap: 20px;
+    line-height: 1.5;
+  }
+
+  .single-blog-img-container {
+    .single-blog-image {
+      max-width: 100%;
+    }
+  }
 }

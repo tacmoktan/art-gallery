@@ -12,14 +12,15 @@
   }
 }
 
-.single-blog {
+.blog {
   display: grid;
   grid-row-gap: 20px;
   padding: 20px;
   box-shadow: 0 0 2px #0000007a;
   height: fit-content;
   .blog-title {
-    font-family: $font-tertiary;
+    font-family: $blog-title-font-family;
+    text-transform: capitalize;
   }
 
   .blog-info {
@@ -30,10 +31,15 @@
     }
   }
 
+  .blog-img-container {
+    overflow: hidden;
+    height: 240px;
+    .blog-img {
+      width: 100%;
+    }
+  }
+
   .blog-short-paragraph {
     line-height: 1.5;
-  }
-  .blog-img {
-    width: 100%;
   }
 }
