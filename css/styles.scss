@@ -16,7 +16,7 @@
 }
 
 #header {
-  box-shadow: 0 0 5px black;
+  box-shadow: 0 0 3px $light-black;
   position: relative;                 //to make sure shadows are above other sibling divs
   #nav-container {
     display: flex;

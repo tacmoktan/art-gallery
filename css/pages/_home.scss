@@ -4,9 +4,14 @@
   background-image: url(https://images.pexels.com/photos/1084510/pexels-photo-1084510.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260);
   display: flex;
   background-size: cover;
-  background-position: top center;
+  background-position: top;
   width: 100%;
   height: 90vh;
+  transition: background-position 0.5s ease-in;
+  &:hover {
+    background-position:center;
+  }
+  
   //background-attachment: fixed;
   #inner-container-quote {
     max-width: $max-width-container;

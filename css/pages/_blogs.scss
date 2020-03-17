@@ -16,8 +16,13 @@
   display: grid;
   grid-row-gap: 20px;
   padding: 20px;
-  box-shadow: 0 0 2px #0000007a;
+  box-shadow: 0 0 3px darken($color-extra, 10%);
   height: fit-content;
+  transition: box-shadow 0.15s ease-in;
+  &:hover {
+    box-shadow: 0 0 4px #0000007a;
+  }
+
   .blog-title {
     font-family: $blog-title-font-family;
     text-transform: capitalize;
@@ -33,7 +38,7 @@
 
   .blog-img-container {
     overflow: hidden;
-    height: 240px;
+    max-height: 240px;
     .blog-img {
       width: 100%;
     }
