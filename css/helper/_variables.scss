@@ -1,14 +1,14 @@
 //colors
-$color-primary:#006c50;
-$color-secondary:#57b22b;
-$color-tertiary:#aae557;
-$color-extra:#e9ebed;
+$color-primary: #006c50;
+$color-secondary: #57b22b;
+$color-tertiary: #aae557;
+$color-extra: #e9ebed;
 
-$light-black:rgba(0, 0, 0, 0.651);
+$light-black: rgba(0, 0, 0, 0.651);
 //fonts
 $font-primary: "Cedarville Cursive", cursive;
-$font-secondary: 'Josefin Sans', sans-serif;
-$font-tertiary: 'Playfair Display', serif;
+$font-secondary: "Josefin Sans", sans-serif;
+$font-tertiary: "Playfair Display", serif;
 
 //blogs
 $blog-title-size: 2.5em;
@@ -17,5 +17,9 @@ $blog-details-size: 18px;
 $blog-text-container-max-width: 700px;
 $blog-title-font-family: $font-tertiary;
 
+//padding,margin
+$padding-margin-lg: 60px;
+$padding-margin-md: 40px;
+$padding-margin-sm: 20px;
 
 $max-width-container: 1140px;

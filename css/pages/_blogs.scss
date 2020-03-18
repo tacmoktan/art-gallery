@@ -1,8 +1,8 @@
 #blogs-container {
   @include main-container;
-  #content-container {
+  .content-container {
     display: grid;
-    grid-row-gap: 40px;
+    grid-row-gap: $padding-margin-md;
     #group-blogs-container {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(250px, 400px));

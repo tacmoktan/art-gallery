@@ -6,7 +6,7 @@
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  padding: 60px 0;
+  padding: $padding-margin-md 0;
   .gallery-item {
     margin: 20px;
     .gallery-description-container {

@@ -17,7 +17,7 @@
 
 #header {
   box-shadow: 0 0 3px $light-black;
-  position: relative;                 //to make sure shadows are above other sibling divs
+  position: relative; //to make sure shadows are above other sibling divs
   #nav-container {
     display: flex;
     justify-content: space-between;
@@ -44,8 +44,6 @@
   }
 }
 
-  
-
 #footer {
   background-image: url(https://images.pexels.com/photos/354939/pexels-photo-354939.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260);
   background-size: cover;
@@ -65,7 +63,7 @@
     flex-wrap: wrap;
     #footer-nav-container {
       display: grid;
-      grid-row-gap: 20px;
+      grid-row-gap: $padding-margin-sm;
       .footer-nav-item {
         font-weight: bold;
         width: fit-content;

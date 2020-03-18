@@ -1,5 +1,10 @@
-#single-blogs-container {
+#single-blogs-container,
+#more-blogs-container {
   @include main-container;
+  .content-container {
+    display: grid;
+    grid-row-gap: $padding-margin-lg;
+  }
 }
 
 .single-blog-container {
@@ -83,6 +88,22 @@
   .single-blog-img-container {
     .single-blog-image {
       max-width: 100%;
+    }
+  }
+}
+
+#more-blogs-container {
+  background: whitesmoke;
+  .content-container {
+    #group-blogs-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 365px));
+      grid-column-gap: 20px;
+      grid-row-gap: 20px;
+
+      .blog {
+        background: white;
+      }
     }
   }
 }
