@@ -12,6 +12,13 @@
   }
 }
 
+.search-blogs-form{
+  position: sticky;
+  top: 73.06px; //navbar-height
+  left: 100%;
+  width: fit-content;
+}
+
 .blog {
   display: grid;
   grid-row-gap: 20px;
@@ -24,7 +31,7 @@
   }
 
   .blog-title {
-    font-family: $blog-title-font-family;
+    font-family: $blog-title-font;
     text-transform: capitalize;
   }
 
@@ -46,5 +53,6 @@
 
   .blog-short-paragraph {
     line-height: 1.5;
+    font-family: $blog-body-font;
   }
 }

@@ -17,7 +17,12 @@
 
 #header {
   box-shadow: 0 0 3px $light-black;
-  position: relative; //to make sure shadows are above other sibling divs
+  position: sticky;
+  top:0;
+  background: white;
+  width: 100%;
+  z-index: 1;
+
   #nav-container {
     display: flex;
     justify-content: space-between;
@@ -26,18 +31,46 @@
     #logo-link {
       #header-logo {
         width: 150px;
+        transition: width 0.15s ease-in;
       }
     }
     #header-nav {
       flex-basis: 35%;
       display: flex;
       justify-content: space-evenly;
+
       .nav-item {
         text-transform: uppercase;
         font-weight: bold;
         transition: color 0.15s ease-in;
+        position: relative;
+        display: block;
+
+        &:after {
+          content: "";
+          display: block;
+          position: absolute;
+          width: 0%;
+          border-bottom: 10px solid;
+          clip-path: polygon(50% 0%, 100% 0, 100% 61%, 95% 42%, 89% 28%, 82% 23%, 70% 20%, 0 20%, 0 0);
+          top: 150%;
+          left: 50%;
+          transform: translateX(-50%);
+          transition: width 0.15s ease-in;
+        }
+
         &:hover {
           color: $color-secondary;
+          &:after {
+            width: 100%;
+          }
+        }
+      }
+
+      .nav-item.active {
+        color: $color-secondary;
+        &:after {
+          width: 100%;
         }
       }
     }

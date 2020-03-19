@@ -7,6 +7,10 @@
   }
 }
 
+#single-blogs-container {
+  padding: 60px 20px;
+}
+
 .single-blog-container {
   display: grid;
   grid-row-gap: 30px;
@@ -71,7 +75,7 @@
   }
 
   .single-blog-title {
-    font-family: $blog-title-font-family;
+    font-family: $blog-title-font;
     font-size: $blog-title-size;
     @include media-phone {
       font-size: $blog-title-size-sm;
@@ -83,9 +87,15 @@
     display: grid;
     grid-row-gap: 20px;
     line-height: 1.5;
+    .single-blog-paragraph {
+      font-family: $blog-body-font;
+    }
   }
 
   .single-blog-img-container {
+    @include media-tablet {
+      margin: 0 -$padding-margin-sm;
+    }
     .single-blog-image {
       max-width: 100%;
     }
