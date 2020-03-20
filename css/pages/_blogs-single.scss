@@ -110,7 +110,10 @@
       grid-template-columns: repeat(auto-fill, minmax(250px, 365px));
       grid-column-gap: 20px;
       grid-row-gap: 20px;
-
+      justify-content: center;
+      @include media-tablet {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 100%));
+      }
       .blog {
         background: white;
       }

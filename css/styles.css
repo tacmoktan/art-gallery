@@ -27,8 +27,8 @@
   margin: auto;
   margin-left: 15vw;
   font-family: "Cedarville Cursive", cursive;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(30%, darkgoldenrod), to(black));
-  background: linear-gradient(darkgoldenrod 30%, black);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(35%, darkgoldenrod), color-stop(75%, #57b22b), to(black));
+  background: linear-gradient(darkgoldenrod 35%, #57b22b 75%, black);
   -webkit-background-clip: text;
   color: transparent;
   -webkit-animation: quote-animation 1s forwards 0s ease;
@@ -340,6 +340,41 @@
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+  outline: 3px solid #e9ebed;
+  -webkit-transition: outline 0.15s ease-in;
+  transition: outline 0.15s ease-in;
+}
+
+.search-blogs-form:focus-within {
+  outline: 3px solid #57b22b;
+}
+
+.search-blogs-form:focus-within .search-btn {
+  color: #006c50;
+}
+
+.search-blogs-form .search-box {
+  font-size: 1em;
+  border: none;
+  outline: none;
+  height: 30px;
+  width: 240px;
+  padding: 5px;
+}
+
+.search-blogs-form .search-btn {
+  width: 30px;
+  height: 30px;
+  background: white;
+  border: none;
+  color: rgba(0, 0, 0, 0.651);
+  cursor: pointer;
+  -webkit-transition: color 0.15s ease-in;
+  transition: color 0.15s ease-in;
+}
+
+.search-blogs-form .search-btn:hover {
+  color: #57b22b;
 }
 
 .blog {
@@ -375,6 +410,8 @@
 .blog .blog-info .blog-date,
 .blog .blog-info .blog-author {
   font-family: "Playfair Display", serif;
+  font-variant-caps: small-caps;
+  font-weight: bold;
 }
 
 .blog .blog-img-container {
@@ -588,6 +625,16 @@
       grid-template-columns: repeat(auto-fill, minmax(250px, 365px));
   grid-column-gap: 20px;
   grid-row-gap: 20px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media (max-width: 900px) {
+  #more-blogs-container .content-container #group-blogs-container {
+    -ms-grid-columns: (minmax(250px, 100%))[auto-fill];
+        grid-template-columns: repeat(auto-fill, minmax(250px, 100%));
+  }
 }
 
 #more-blogs-container .content-container #group-blogs-container .blog {
@@ -601,6 +648,9 @@
   margin: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+* {
   font-family: "Josefin Sans", sans-serif;
 }
 
