@@ -388,6 +388,12 @@
   margin-bottom: 20px;
 }
 
+@media (max-width: 900px) {
+  .section-blogs-and-search-container .search-blogs-form {
+    top: 109px;
+  }
+}
+
 @media (max-width: 599px) {
   .section-blogs-and-search-container .search-blogs-form {
     left: 0;

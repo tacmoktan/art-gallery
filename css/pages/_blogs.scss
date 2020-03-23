@@ -14,23 +14,23 @@
     grid-template-columns: repeat(auto-fill, minmax(250px, 400px));
     grid-column-gap: 30px;
     grid-row-gap: 30px;
-    flex-basis:75%;
+    flex-basis: 75%;
     @include media-desktop {
       grid-template-columns: repeat(auto-fill, minmax(250px, 700px));
-      flex-basis:65%;
+      flex-basis: 65%;
     }
-    @include media-tablet{
-      order:1;
-      flex-basis:80%;
+    @include media-tablet {
+      order: 1;
+      flex-basis: 80%;
     }
-    @include media-phone{
-      flex-basis:100%;
+    @include media-phone {
+      flex-basis: 100%;
     }
   }
   .search-blogs-form {
     display: flex;
     position: sticky;
-    top: 73.06px; //navbar-height
+    top: 73.06px; //navbar-height desktop
     left: 100%;
     width: fit-content;
     height: fit-content;
@@ -38,10 +38,14 @@
     transition: outline 0.15s ease-in;
     margin-bottom: $padding-margin-sm;
 
-    @include media-phone{
-      left:0;
+    @include media-tablet {
+      top: 109px; //navbar-height tablet
     }
-   
+
+    @include media-phone {
+      left: 0;
+    }
+
     &:focus-within {
       outline: 3px solid $color-secondary;
       .search-btn {
@@ -80,7 +84,7 @@
   box-shadow: 0 0 3px darken($color-extra, 10%);
   height: fit-content;
   transition: box-shadow 0.15s ease-in;
-  
+
   &:hover {
     box-shadow: 0 0 4px #0000007a;
   }
