@@ -30,6 +30,10 @@
     justify-content: space-between;
     align-items: center;
     @include inner-desktop-container;
+
+    @include media-tablet {
+      flex-direction: column;
+    }
     #logo-link {
       #header-logo {
         width: 150px;
@@ -40,7 +44,10 @@
       flex-basis: 35%;
       display: flex;
       justify-content: space-evenly;
-
+      @include media-tablet {
+        width: 100%;
+        padding: 10px;
+      }
       .nav-item {
         text-transform: uppercase;
         font-weight: bold;
@@ -59,6 +66,10 @@
           left: 50%;
           transform: translateX(-50%);
           transition: width 0.15s ease-in;
+          @include media-tablet {
+            clip-path: none;
+            border-bottom: 5px solid;
+          }
         }
 
         &:hover {
